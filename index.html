@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <header class="header">
+      <h1>Simple Image Slider</h1>
+    </header>
+
+    <!-- Image Slider Component -->
+    <div class="slider-wrapper" id="slider">
+
+      <!-- Slide Track -->
+      <div class="slider-track" id="sliderTrack">
+
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+            alt="Mountain Lake in Yosemite">
+          <div class="caption">
+            <h3>Alpine Mountain Lake</h3>
+            <p>Tranquil waters surrounded by towering granite peaks.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=1200&q=80"
+            alt="Northern Lights Aurora Borealis">
+          <div class="caption">
+            <h3>Aurora Borealis</h3>
+            <p>Vibrant dancing lights over Scandinavian snowy fjords.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80"
+            alt="Traditional Pagoda in Kyoto">
+          <div class="caption">
+            <h3>Historic Kyoto Temple</h3>
+            <p>Centuries of peace and timeless Japanese architecture.</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
+            alt="Golden Desert Sand Dunes">
+          <div class="caption">
+            <h3>Golden Desert Dunes</h3>
+            <p>Sunlight casting rich amber hues across rolling sands.</p>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80"
+            alt="Santorini Coastal Cliffside">
+          <div class="caption">
+            <h3>Santorini Coastline</h3>
+            <p>Iconic whitewashed villages perched above the deep blue Aegean Sea.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous Slide">&#10094;</button>
+      <button class="nav-btn next-btn" id="nextBtn" aria-label="Next Slide">&#10095;</button>
+
+      <!-- Slide Counter -->
+      <div class="slide-counter" id="slideCounter">1 / 5</div>
+
+      <!-- Indicators (Dots) -->
+      <div class="indicators" id="indicators"></div>
+
+    </div>
+
+    <!-- Small Note / Instructions -->
+    <div class="info-note">
+      <p>💡 <strong>Features:</strong> Auto-rotates every 3s • Hover over slider to pause • Click arrows or dots to
+        navigate</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
